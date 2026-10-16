@@ -1,0 +1,15 @@
+
+
+# Local state and material excluded from portfolio publication
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+private-course-materials/
+*.class
+
+# Original course data is local only
+dataset.csv
+DQN1*
+D682 Task*.docx

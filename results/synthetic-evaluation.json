@@ -1,0 +1,84 @@
+{
+  "dataset_sha256": "3f083229887f05f212f5e8804a8746f3d1c6a71d759a1134aceb87593ede8b81",
+  "rows": 240,
+  "train_rows": 192,
+  "holdout_rows": 48,
+  "seed": 42,
+  "folds": 3,
+  "search_trials": 3,
+  "trees": 40,
+  "python": "3.12.14",
+  "sklearn": "1.9.1",
+  "baseline_cv": {
+    "rmse_per_fold": [
+      0.8951486557059165,
+      0.7762254520892699,
+      0.8888867700336305
+    ],
+    "rmse_mean": 0.8534202926096056,
+    "rmse_std": 0.05464482503868809,
+    "r2_per_fold": [
+      0.10418280781035005,
+      0.23942302104487756,
+      0.22545116047233682
+    ]
+  },
+  "nested_selection_cv": {
+    "rmse_per_fold": [
+      0.8867254485675399,
+      0.7613532129748748,
+      0.8452051515844677
+    ],
+    "rmse_mean": 0.8310946043756274,
+    "rmse_std": 0.0521464605463967,
+    "r2_per_fold": [
+      0.12096248349072403,
+      0.2682886564455832,
+      0.2997063411349903
+    ]
+  },
+  "fixed_selected_model_fold_contained_cv": {
+    "rmse_per_fold": [
+      0.85853704940078,
+      0.7613532129748748,
+      0.8452051515844677
+    ],
+    "rmse_mean": 0.8216984713200408,
+    "rmse_std": 0.04301625683703603,
+    "r2_per_fold": [
+      0.17596217263512592,
+      0.2682886564455832,
+      0.2997063411349903
+    ]
+  },
+  "diagnostic_prefit_transform_cv": {
+    "rmse_per_fold": [
+      0.8231974155991536,
+      0.7487804499412187,
+      0.8336155029172719
+    ],
+    "rmse_mean": 0.801864456152548,
+    "rmse_std": 0.03777625287951259,
+    "r2_per_fold": [
+      0.24240506579486432,
+      0.29225564878637844,
+      0.31877984569211204
+    ]
+  },
+  "baseline_holdout": {
+    "rmse": 0.7488447630115629,
+    "r2": 0.31426612411371957
+  },
+  "selected_holdout": {
+    "rmse": 0.737199104981985,
+    "r2": 0.3354286583506856
+  },
+  "selected_model": "Ridge",
+  "best_parameters": {
+    "model__alpha": 10.0,
+    "model": "Ridge()"
+  },
+  "scope": "Random held-out rows from the supplied dataset. Synthetic fixtures do not establish health prediction or reproduce historical results. Nested CV covers tuning; the diagnostic fixed-model comparisons are conditional on hyperparameters chosen using the training partition. No temporal or geographic generalization is established.",
+  "evaluation_date": "2026-10-15",
+  "dataset_kind": "Independent synthetic software fixture; no real health observations"
+}
